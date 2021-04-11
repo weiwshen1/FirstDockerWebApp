@@ -7,7 +7,7 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
 COPY ["FirstDockerWebApp.csproj", "FirstDockerWebApp/"]
-RUN dotnet restore "FirstDockerWebApp/FirstDockerWebApp.csproj" --network=host
+RUN dotnet restore "FirstDockerWebApp/FirstDockerWebApp.csproj" 
 COPY . .
 WORKDIR "/src/FirstDockerWebApp"
 RUN dotnet build "FirstDockerWebApp.csproj" -c Release -o /app/build
