@@ -7,4 +7,4 @@ Resources:
         LoadBalancerInfo:
           ContainerName: "$CONTAINER_NAME"
           ContainerPort: "80"
-        PlatformVersion: "LATEST"
+        PlatformVersion: "null"
