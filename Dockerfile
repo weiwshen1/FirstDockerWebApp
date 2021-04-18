@@ -18,7 +18,7 @@ COPY ["NUnitTestProject/NUnitTestProject.csproj", "NUnitTestProject/"]
 RUN dotnet restore "NUnitTestProject/NUnitTestProject.csproj" 
 COPY . .
 WORKDIR "/src/NUnitTestProject"
-RUN dotnet test "FirstDockerWebApp.csproj" -c Release -o /app/build
+RUN dotnet test "FirstDockerWebApp.csproj"
 
 FROM build AS publish
 RUN dotnet publish "FirstDockerWebApp.csproj" -c Release -o /app/publish
