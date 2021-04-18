@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstDockerWebApp", "FirstDockerWebApp.csproj", "{7C12ED02-F7B3-4A90-B149-F9C5900CF05F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstDockerWebApp", "FirstDockerWebApp\FirstDockerWebApp.csproj", "{0EEA2DAA-53FA-4DE7-B0AF-F464DE89CA9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject", "NUnitTestProject\NUnitTestProject.csproj", "{2DFF1594-9742-4565-9F8A-A6755D5771EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7C12ED02-F7B3-4A90-B149-F9C5900CF05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C12ED02-F7B3-4A90-B149-F9C5900CF05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C12ED02-F7B3-4A90-B149-F9C5900CF05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C12ED02-F7B3-4A90-B149-F9C5900CF05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEA2DAA-53FA-4DE7-B0AF-F464DE89CA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEA2DAA-53FA-4DE7-B0AF-F464DE89CA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEA2DAA-53FA-4DE7-B0AF-F464DE89CA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEA2DAA-53FA-4DE7-B0AF-F464DE89CA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DFF1594-9742-4565-9F8A-A6755D5771EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFF1594-9742-4565-9F8A-A6755D5771EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFF1594-9742-4565-9F8A-A6755D5771EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFF1594-9742-4565-9F8A-A6755D5771EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

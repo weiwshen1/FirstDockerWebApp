@@ -13,6 +13,13 @@ COPY . .
 WORKDIR "/src/FirstDockerWebApp"
 RUN dotnet build "FirstDockerWebApp.csproj" -c Release -o /app/build
 
+WORKDIR /src
+COPY ["NUnitTestProject/NUnitTestProject.csproj", "NUnitTestProject/"]
+RUN dotnet restore "NUnitTestProject/NUnitTestProject.csproj" 
+COPY . .
+WORKDIR "/src/NUnitTestProject"
+RUN dotnet test "FirstDockerWebApp.csproj" -c Release -o /app/build
+
 FROM build AS publish
 RUN dotnet publish "FirstDockerWebApp.csproj" -c Release -o /app/publish
 
